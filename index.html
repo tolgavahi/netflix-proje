@@ -48,6 +48,11 @@ header .container{
     gap: 20px;
 }
 
+.header-actions input{
+    padding: 6px 10px;
+    border-radius: 5px; 
+    border: 1px solid #00000030;
+}
 
 .header-actions img{
     width: 30px;
@@ -170,24 +175,47 @@ a:hover {
 }
 
 
-/*
-
-
-
-
-
 footer{
     margin-top: 50px;
 }
 
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-info{
+    font-size: 13px;
+}
+
+.footer-info p{
+    font-size: 13px;
+}
+
+.footer-info nav{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.social-media{
+    display: flex;
+    gap: 10px;
+}
+
+.mobile-app-icons{
+     display: flex;
+    gap: 10px;   
+}
 
 .mobile-app-icons img{
     width: 100px;
     height: auto;
 }
-*/
-
-
 
 
     </style>
@@ -300,13 +328,29 @@ footer{
     </main>
 
     <footer>
+        <div class="container">
+            <div class="footer-info">
+                <nav>
+                    <a href="#">Term of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact</a>
+                </nav>
 
-            <!--
-                Text : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                appstore : assets/img/appstore-icon.png
-                playstore : assets/img/googleplay-icon.png
-            -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
 
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">X</a>
+            <a href="#">Instagram</a>
+        </div>
+
+        <div class="mobile-app-icons">
+            <img src="assets/img/appstore-icon.png" alt="AppStore" />
+            <img src="assets/img/googleplay-icon.png" alt="Playstore" />
+        </div>
+
+        </div>
     </footer>
 </body>
 </html>
