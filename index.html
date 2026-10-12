@@ -6,229 +6,22 @@
     <link src="./assets/css/style.css" rel="stylesheet" />
     <link href="assets/img/favicon.svg" rel="icon" />
     <title>Netflix</title>
-    <style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body{
-    background-color: #fff;
-    font-family: Arial, sans-serif;
-}
-
-.container{
-    width: 1200px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-header{
-    padding: 30px;
-}
-
-
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    height: 20px;
-    width: 76px;
-}
-
-.header-actions{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-    gap: 20px;
-}
-
-.header-actions input{
-    padding: 6px 10px;
-    border-radius: 5px; 
-    border: 1px solid #00000030;
-}
-
-.header-actions img{
-    width: 30px;
-    height: 30px;
-}
-
-
-header nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-    gap: 10px;
-
-}
-
-
-header nav ul li a{
-    font-size: 16px;
-    color: #000;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-header nav ul li a:hover{
-    background-color: gray;
-    color: #fff;
-    border-radius: 20px;
-}
-
-header nav ul li a.active{
-    background-color: #000;
-    color: #fff;
-    border-radius: 30px;
-}
-
-a {
-    text-decoration: none;
-    color: #cc0000;
-}
-a:hover {
-    text-decoration: underline;
-    color: #000;
-}
-
-.hero-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /*background: url('../img/hero.jpg') cover center center no-repeat;*/
-    background: url('./assets/img/hero.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 500px;
-    padding: 50px;
-    margin: 30px 0;
-    color: #fff;
-    border-radius: 50px;
-    
-}
-
-.movie-section{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;    
-    margin: 30px 0;
-
-}
-
-.title{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.movie-item {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 10px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 20px;
-    transition: all .3s ease;
-    
-}
-
-.movie-item:hover{
-    scale: 1.3;
-    border: 1px solid gray;
-}
-
-.movie-item img{
-    border-radius: 10px;
-    margin: 10px 0;
-}
-
-.movie-item button{
-    background-color: #cc0000;
-    color: #fff;
-    padding: 10px 20px;
-    width: 150px;
-    border: 0;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: ease .3s all;
-}
-
-.movie-item button:hover{
-    background-color: #000;
-
-}
-
-.movie-item h3{
-    font-size: 22px;
-}
-
-
-footer{
-    margin-top: 50px;
-}
-
-footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.footer-info{
-    font-size: 13px;
-}
-
-.footer-info p{
-    font-size: 13px;
-}
-
-.footer-info nav{
-    display: flex;
-    width: 100%;
-    gap: 20px;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.social-media{
-    display: flex;
-    gap: 10px;
-}
-
-.mobile-app-icons{
-     display: flex;
-    gap: 10px;   
-}
-
-.mobile-app-icons img{
-    width: 100px;
-    height: auto;
-}
-
-
-    </style>
 </head>
 <body>
     <header>
+        <!-- 
+        logo: 
+        notification: assets/img/bell.svg
+        user : assets/img/user.svg
+        -->
 
         <div class="container">
             <img src="assets/img/logo.svg " class="logo" alt="Netflix" />
 
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Ana Sayfa</a></li>
+                    <li><a href="#">Ana Sayfa</a></li>
                     <li><a href="#">Diziler</a></li>
                     <li><a href="#">Filmler</a></li>
                     <li><a href="#">Yeni ve Popüler</a></li>
@@ -237,120 +30,52 @@ footer .container {
             </nav>
 
 
-            <div class="header-actions">
-                    <input type="text" placeholder="Search" />
-                    <img src="./assets/img/bell.svg" alt="notification" />
-                    <img src="./assets/img/user.svg" alt="user" />
-
+            <div>
+                <inp
             </div>
         </div>
 
     </header>
     
     <main>
+        <!-- 
+         film adı : Fısıltı Adam
+        açıklama : Oğlu ortadan kaybolan dul bir yazar (Adam Scott), olayın dedektif babasının (Robert De Niro) yıllar önce yakaladığı bir seri katille bağlantılı olduğunu keşfeder.
+        -->
+
+            <section class="movie-section">
 
 
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Fısıltı Adam</h1>
-                    <p>Oğlu ortadan kaybolan dul bir yazar (Adam Scott), olayın dedektif babasının (Robert De Niro) yıllar önce yakaladığı bir seri katille bağlantılı olduğunu keşfeder.</p>
-                </div>
+                <!-- 
+                1: The Mentalist - assets/img/1.jpg
+                2: Animals - assets/img/2.jpg
+                3: 3 Cisim Problemi - assets/img/3.jpg
+                -->
 
-            </div>
-        </section>
+                
 
-
-            <div class="container">
-                <section class="movie-section">
+            </section>
 
 
-                        <div class="title">
-                            <h2>Popular Movies</h2>
+            <section class="movie-section">
+                <!-- 
+                4: Cennetin Doğusu - assets/img/4.jpg
+                5: Below - assets/img/5.jpg
+                6: Breaking Bad - assets/img/6.jpg                
+                -->
 
-                            <a href="#">See all</a>
-                        </div>
-
-
-                        <div class="movie-item">
-                            <img src="assets/img/1.jpg">
-                            <h3>The Mentalist</h3>
-                            <button>Watch</button>
-                        </div>
-                        <div class="movie-item">
-                            <img src="assets/img/2.jpg">
-                            <h3>Animals</h3>
-                            <button>Watch</button>
-                        </div>
-
-                        <div class="movie-item">
-                            <img src="assets/img/3.jpg">
-                            <h3>3 Cisim Problemi</h3>
-                            <button>Watch</button>
-                        </div>                    
-
-
-                </section>
-
-
-                <section class="movie-section">
-
-                        <div class="title">
-                            <h2>Recommend For Your</h2>
-
-                            <a href="#">See all</a>
-                        </div>
-
-
-                        <div class="movie-item">
-                            <img src="assets/img/4.jpg">
-                            <h3>Cennetin Doğusu</h3>
-                            <button>Watch</button>
-                        </div>  
-
-                        <div class="movie-item">
-                            <img src="assets/img/5.jpg">
-                            <h3>Below</h3>
-                            <button>Watch</button>
-                        </div> 
-
-
-                        <div class="movie-item">
-                            <img src="assets/img/6.jpg">
-                            <h3>Breaking Bad</h3>
-                            <button>Watch</button>
-                        </div>                     
-
-                </section>    
-            
-            </div>        
+            </section>            
         </div>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-info">
-                <nav>
-                    <a href="#">Term of Service</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Contact</a>
-                </nav>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
+            <!--
+                Text : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                appstore : assets/img/appstore-icon.png
+                playstore : assets/img/googleplay-icon.png
+            -->
 
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">X</a>
-            <a href="#">Instagram</a>
-        </div>
-
-        <div class="mobile-app-icons">
-            <img src="assets/img/appstore-icon.png" alt="AppStore" />
-            <img src="assets/img/googleplay-icon.png" alt="Playstore" />
-        </div>
-
-        </div>
     </footer>
 </body>
 </html>
