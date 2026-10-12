@@ -9,6 +9,26 @@ body{
     font-family: Arial, sans-serif;
 }
 
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo{
+    height: 20px;
+    width: 76px;
+}
+
+/*
 a {
     text-decoration: none;
     color: #cc0000;
@@ -19,10 +39,6 @@ a:hover {
     color: #000;
 }
 
-.logo{
-    height: 20px;
-    width: 76px;
-}
 
 
 footer{
@@ -34,3 +50,4 @@ footer{
     width: 100px;
     height: auto;
 }
+*/

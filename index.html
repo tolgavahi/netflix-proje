@@ -3,15 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="./assets/css/style.css" rel="stylesheet" />
+    <link href="assets/img/favicon.svg" rel="icon" />
+    <title>Netflix</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header{
+    padding: 30px;
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 20px;
+    width: 76px;
+}
+
+.header-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    gap: 20px;
+}
+
+
+.header-actions img{
+    width: 30px;
+    height: 30px;
+}
+
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    gap: 10px;
+
+}
+
+
+header nav ul li a{
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover{
+    background-color: gray;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header nav ul li a.active{
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+}
+
+
+/*
+a {
+    text-decoration: none;
+    color: #cc0000;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+
+footer{
+    margin-top: 50px;
+}
+
+
+.mobile-app-icons img{
+    width: 100px;
+    height: auto;
+}
+*/
+
+
+
+
+    </style>
 </head>
 <body>
     <header>
-        <!-- 
-        logo: assets/img/logo.svg 
-        notification: assets/img/bell.svg
-        user : assets/img/user.svg
-        -->
+
+        <div class="container">
+            <img src="assets/img/logo.svg " class="logo" alt="Netflix" />
+
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Ana Sayfa</a></li>
+                    <li><a href="#">Diziler</a></li>
+                    <li><a href="#">Filmler</a></li>
+                    <li><a href="#">Yeni ve Popüler</a></li>
+                    <li><a href="#">Benim Netflix'im</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="header-actions">
+                    <input type="text" placeholder="Search" />
+                    <img src="./assets/img/bell.svg" alt="notification" />
+                    <img src="./assets/img/user.svg" alt="user" />
+
+            </div>
+        </div>
 
     </header>
     
